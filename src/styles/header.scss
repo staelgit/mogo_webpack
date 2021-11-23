@@ -1,0 +1,28 @@
+//====================================================================================================
+header{}
+//====================================================================================================
+
+
+
+/*.icon-menu {
+	@media (max-width:$md3+px) {
+		display: block;
+		position: absolute;
+		top: 33px;
+		right: 15px;
+		width: 30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0;position: absolute;width: 100%;height: 2px;background-color: #4d4959;;
+			&:first-child{top: 0;}
+			&:last-child{top: auto;bottom: 0;}
+		}
+		&.active{
+			span{@include scale(0); background-color: #fff;
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+}*/
