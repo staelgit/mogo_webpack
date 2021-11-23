@@ -27,7 +27,7 @@
 	}
 	.select-title__arrow{position: absolute;top:0;
 		right: 0px;width:45px;height:100%;
-		background: url('../img/icons/select-arrow.svg') center no-repeat;
+		//background: url('../img/icons/select-arrow.svg') center no-repeat;
 	}
 	.select-title__value{
 		color: #000;
@@ -82,7 +82,7 @@ textarea.input{
 	}
 	&.active{
 		&:before{
-			background: url('../img/icons/check.png') center no-repeat;
+			//background: url('../img/icons/check.png') center no-repeat;
 		}
 	}
 }
@@ -94,7 +94,7 @@ textarea.input{
 	input{display: none;}
 	&:before{position: absolute;left: 0;top: 0;width: 16px;height: 16px;content: '';border: 1px solid #7f7f7f;border-radius: 50%;}
 	&.active{
-		&:before{background: url('../img/icons/option.png') center no-repeat;}
+		//&:before{background: url('../img/icons/option.png') center no-repeat;}
 	}
 }
 //</OPTIONS>====================================================================================================
@@ -105,8 +105,8 @@ textarea.input{
 	&.edit .star{cursor: pointer;}
 	.star{width: 17px;height: 14px;display: inline-block;position: relative;z-index: 3;}
 }
-.rating__line{position: absolute;width: 85px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating.svg') 0 0 no-repeat;z-index: 1;background-size:85px 100%;}
-.rating__activeline{position: absolute;width: 0px;height: 14px;top: 0;left: 0;background: url('../img/icons/bg_rating_active.svg') 0 0 no-repeat;z-index: 2;background-size:85px 100%;}
+.rating__line{position: absolute;width: 85px;height: 14px;top: 0;left: 0;/*background: url('../img/icons/bg_rating.svg') 0 0 no-repeat;*/z-index: 1;background-size:85px 100%;}
+.rating__activeline{position: absolute;width: 0px;height: 14px;top: 0;left: 0;/*background: url('../img/icons/bg_rating_active.svg') 0 0 no-repeat;*/z-index: 2;background-size:85px 100%;}
 .rating__value{display: inline-block;color: #1b3139;font-size: 14px;line-height: 13px;vertical-align: middle;}
 //</RATING>====================================================================================================
 
@@ -147,8 +147,8 @@ textarea.input{
 }
 .form-range-line {position:relative;height:5px;border-radius:0 0 4px 4px;background-color:#e0e0e0;margin: -2px 0px 0px 0px;
 	.ui-slider-range{background-color: #093454;height: 5px;position: absolute;top: 0;left: 0;border-radius:0 0 4px 4px;}
-	.ui-slider-handle{background:url('../img/icons/range.svg') 0 0 no-repeat;width:28px;height:28px;position:absolute;margin:-9px 0px 0px -14px;top:0;left:0;cursor:pointer;}
-	.ui-state-hover{background: url('../img/icons/range_a.svg') 0 0 no-repeat;}
+	.ui-slider-handle{/*background:url('../img/icons/range.svg') 0 0 no-repeat;*/width:28px;height:28px;position:absolute;margin:-9px 0px 0px -14px;top:0;left:0;cursor:pointer;}
+	.ui-state-hover{/*background: url('../img/icons/range_a.svg') 0 0 no-repeat;*/}
 }
 .form-range-values {@include flexbox();justify-content: space-between;padding: 14px 0px 0px 0px;}
 .form-range-values__item {font-size: 12px;color: #888;}

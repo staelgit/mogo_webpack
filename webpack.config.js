@@ -68,9 +68,9 @@ const jsLoaders = () => {
 		options: babelOptions()
 	}];
 
-	if(isDev) {
+	/*if(isDev) {
 		loaders.push('eslint-loader')
-	}
+	}*/
 	return loaders
 };
 
@@ -94,10 +94,10 @@ const plugins = () => {
 				from: path.resolve(__dirname, 'src/img'),
 				to: path.resolve(__dirname, 'dist/img')
 			},
-			{
+			/*{
 				from: path.resolve(__dirname, 'src/fonts'),
 				to: path.resolve(__dirname, 'dist/fonts')
-			}
+			}*/
 		]),
 		new MiniCssExtractPlugin({
 			filename: fileName('css')
@@ -156,14 +156,14 @@ module.exports = {
 				test: /\.(ttf|woff|woff2|eot)$/,
 				use: ['file-loader']
 			},
-			{
+			/*{
 				test: /\.xml$/,
 				use: ['xml-loader']
-			},
-			{
+			},*/
+			/*{
 				test: /\.csv$/,
 				use: ['csv-loader']
-			},
+			},*/
 			{
 				test: /\.js$/,
 				exclude: /node_modules/,
