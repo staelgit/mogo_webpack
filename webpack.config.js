@@ -38,8 +38,8 @@ const cssLoaders = extra => {
 				reloadAll: true
 			}
 		},
-		'css-loader',
-		'postcss-loader'
+		/*'css-loader'*/{ loader: 'css-loader', options: { sourceMap: true } },
+		/*'postcss-loader'*/{ loader: 'postcss-loader', options: { sourceMap: true } }
 	];
 	if (extra) {
 		loaders.push(extra)
@@ -142,11 +142,11 @@ module.exports = {
 			},
 			{
 				test: /\.less$/,
-				use: cssLoaders('less-loader')
+				use: cssLoaders(/*'less-loader'*/ { loader: 'less-loader', options: { sourceMap: true } })
 			},
 			{
 				test: /\.s[ac]ss$/,
-				use: cssLoaders('sass-loader')
+				use: cssLoaders(/*'sass-loader'*/ { loader: 'sass-loader', options: { sourceMap: true } })
 			},
 			{
 				test: /\.(png|svg|jpg|gif)$/,
