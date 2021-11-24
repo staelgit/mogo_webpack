@@ -112,7 +112,7 @@ $(document).ready(function() {
 	// найсскролл
 	$(".accordion-wedo__text").niceScroll({
 	});
-	/*
+
 
         // JQ - переход по клику кнопки до его блока
         $('a[data-item]').click(function (e) {
@@ -122,8 +122,7 @@ $(document).ready(function() {
                 scrollTop: $(targetSelector).offset().top-56
             }, 1000);
         });
-    */
-	/*
+
 
         // JQ - плавающее меню
         $(window).scroll(swimmingMenu);
@@ -140,18 +139,14 @@ $(document).ready(function() {
                 headerElement.removeClass('fixed')
             }
         }
-    */
-	/*
 
         // JQ - подсветка кнопок в зависимости от того что сейчас на экране
-        $(window).on("scroll resize", highlightButtonByCurrentVisibleElement);
-
-        highlightButtonByCurrentVisibleElement();
+        $(window).on("scroll resize", highlightButtonByCurrentVisibleElement).scrollTop(1).scrollTop(-1);
 
         function highlightButtonByCurrentVisibleElement() {
             let currentClientHeight = $(this).height();
-            let documentScroll = $(this).scrollTop();
-            var activeElementId;
+	        let documentScroll = $(this).scrollTop();
+	        var activeElementId;
 
             $('.wrapper').children().each(function () {
                 let elemTop = $(this).offset().top - documentScroll;
@@ -187,8 +182,6 @@ $(document).ready(function() {
                 }
             })
         }
-    */
-	/*
 
         // JQ - убирание меню при клике на мобильных
         $('.header-menu').click(function () {
@@ -201,7 +194,6 @@ $(document).ready(function() {
             }
         })
 
-    */
 
 
 
@@ -209,7 +201,7 @@ $(document).ready(function() {
 
 
 // ------------- js -------------------
-
+/*
 // JS переход по клику кнопки до его блока
 
 	goToElementByButtonClick();
@@ -348,6 +340,8 @@ $(document).ready(function() {
 			document.querySelector('.header-menu__icon').classList.remove('active');
 		}
 	}
+
+	*/
 //-------------- преднастройки, script.js --------------
 
 //========================= jq-end.js====================================
