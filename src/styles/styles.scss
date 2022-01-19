@@ -2046,11 +2046,8 @@ a {
 @media (max-width: $md2+px) {
 	font-size: 12px;
 }
-a {
+span {
 	color: inherit;
-&:hover {
-	 text-decoration: underline;
- }
 }
 }
 // .item-blog__text
