@@ -2378,7 +2378,7 @@ a {
 // .footer__blogs-item-img
 &__blogs-item-img {
 	 flex: 0 0 120px;
-a {
+span {
 	display: block;
 	padding: 66.67% 0px 0px 0px;
 
@@ -2401,11 +2401,8 @@ a {
 	 text-transform: uppercase;
 	 color: #333333;
 	 letter-spacing: -0.4px;
-a {
+span {
 	color: inherit;
-&:hover {
-	 text-decoration: underline;
- }
 
 }
 @media (max-width: $md2+px) {
