@@ -136,10 +136,10 @@ $fontfamily:"Roboto";
 $scrollBarWidth: 21;
 $minwidth:320px;
 $mw:1200;
-$md1:$mw+20+$scrollBarWidth;
-$md2:992.98+$scrollBarWidth;
+$md1:$mw+20;
+$md2:992.98;
 $md3:767.98;
-$md4:577.98+$scrollBarWidth;
+$md4:577.98;
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
 
 //<ОБНУЛЕНИЕ, ОБЩИЕ ПАРАМЕТРЫ>===============================================================================================
@@ -179,11 +179,11 @@ h1,h2,h3,h4,h5,h6{font-weight: inherit;font-size: inherit;}
 //</ОБОЛОЧКА>===========================================================================================================
 
 //<ОСНОВНАЯ СЕТКА>===========================================================================================================
-.container{max-width:$mw+px;margin: 0 auto;width: 100%;
-@media (max-width:$md1+px){max-width: 970px;}
+.container{max-width:$mw+px;margin: 0 auto;width: 100%; padding:0 10px;
+@media (max-width:$md1+px){max-width: 970px; padding:0 10px}
 @media (max-width:$md2+px){max-width: 750px; padding:0 10px}
-@media (max-width:$md3+px){max-width: 540px;}
-@media (max-width:$md4+px){max-width: none;padding:0 10px;}
+@media (max-width:$md3+px){max-width: 540px; padding:0 10px}
+@media (max-width:$md4+px){max-width: none;padding:0 10px}
 }
 //</ОСНОВНАЯ СЕТКА>===========================================================================================================
 
@@ -2473,7 +2473,7 @@ a {
 // .footer__instagram-photo
 &__instagram-photo {
 	 margin: 1px;
-	 flex: 0 1 88px;
+	 flex: 0 1 86px;
 	 overflow: hidden;
 	 transition: all 0.3s ease 0s;
 @media (max-width: $md1+px) {
