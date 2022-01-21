@@ -48,11 +48,21 @@ $(document).ready(function() {
 	function ibg(){
 		$.each($('.ibg'), function(index, val) {
 			if($(this).find('img').length>0){
-				$(this).css('background-image','url("'+$(this).find('img').attr('src')+'")');
+				$(this).css('background-image','url("'+$(this).find('img').attr('data-src')+'")');
+				$(this).find('img').removeAttr('data-src');
 			}
 		});
 	}
 	ibg();
+
+	// lazyLoad
+
+	[].forEach.call(document.querySelectorAll('img[data-src]'), function(img) {
+		img.setAttribute('src', img.getAttribute('data-src'));
+		img.onload = function() {
+			img.removeAttribute('data-src');
+		};
+	});
 
 // ??
 
