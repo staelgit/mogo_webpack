@@ -1981,6 +1981,11 @@ img {
 .item-blog {
 	display: flex;
 	flex-direction: column;
+	&:hover {
+		.item-blog__title {
+			text-decoration: underline;
+		}
+	}
 // .item-blog__img
 &__img {
 	 position: relative;
