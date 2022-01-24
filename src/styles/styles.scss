@@ -998,7 +998,7 @@ span {
 
    .devices {
 	   height: 850px;
-	   background: url("../img/devices/bg_devices.jpg") 50%/cover no-repeat;
+	   //background: url("../img/devices/bg_devices.jpg") 50%/cover no-repeat;
 	   padding: 110px 0 0 0;
 	   position: relative;
 @media (max-width: $md2+px) {
@@ -1012,8 +1012,15 @@ span {
 @media (max-width: $md4+px) {
 	height: 530px;
 }
-// .devices__header
-&__header {}
+// .devices__bg
+&__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
 // .devices__ipad
 &__ipad {
 	 position: absolute;
@@ -1808,8 +1815,9 @@ img {
 
 
    .clients {
-	   background: url("../img/clients/clients_bg.jpg") 50%/cover no-repeat;
+	   //background: url("../img/clients/clients_bg.jpg") 50%/cover no-repeat;
    // min-height: 830px;
+	   position: relative;
 	   padding: 102px 0 130px 0;
 @media (max-width: $md2+px) {
 	padding: 72px 0 90px 0;
@@ -1820,8 +1828,15 @@ img {
 @media (max-width: $md4+px) {
 	padding: 35px 0 50px 0;
 }
-// .clients__header
-&__header {}
+// .clients__bg
+&__bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -100;
+}
 // .clients__body
 &__body {
 	 display: flex;
@@ -2108,7 +2123,7 @@ span {
 // map --------------------------------------------------------------------------------------------
 
    .map {
-	   background: url("../img/map/map_bg.jpg") 50%/cover no-repeat;
+	   //background: url("../img/map/map_bg.jpg") 50%/cover no-repeat;
 	   height: 200px;
 @media (max-width: $md3+px) {
 	height: 150px;
