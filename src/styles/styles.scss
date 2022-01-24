@@ -692,6 +692,18 @@ span {
 	 transition: all 0.3s ease 0s;
 	 padding: 65.78947368% 0 0 0;
  }
+// .about__img-1
+&__img-1 {
+	background: url("../img/about/01.jpg") 50%/cover no-repeat;
+}
+// .about__img-2
+&__img-2 {
+   background: url("../img/about/02.jpg") 50%/cover no-repeat;
+}
+// .about__img-3
+&__img-3 {
+   background: url("../img/about/03.jpg") 50%/cover no-repeat;
+}
 // .about__label-bg
 &__label-bg {
 	 position: absolute;
